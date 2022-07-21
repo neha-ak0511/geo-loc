@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { data } from '../../../data/MOCK_DATA'
-import { User } from '../../model/user.model';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +6,9 @@ import { User } from '../../model/user.model';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = data;
+  longText = `The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog
+  from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+  originally bred for hunting.`;
   constructor() { }
 
   ngOnInit(): void {

@@ -5,20 +5,22 @@ import { AboutUsModule } from './about-us/about-us.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactUsModule } from './contact-us/contact-us.module';
-import { TestAboutComponent } from './test-about/test-about.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StoreComponent } from './store/store.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestAboutComponent,
     NavBarComponent,
+    StoreComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ContactUsModule,
-    AboutUsModule
+    AboutUsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,25 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <ul class="side-nav-options-list">
+        
+        <li [routerLink]="['overview']">Overview</li>
+        <li [routerLink]="['suppliers']">Manage suppliers</li>
+        <li [routerLink]="['users']">Manage customers</li>
+        <li [routerLink]="['personalsettings']">Personal settings</li>
+        <li [routerLink]="['analytics']">Analytics</li>
+        <li [routerLink]="['reports']">Reports</li>
+  
+      </ul>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()" class="btn-dark">
+        >>
+      </button>
+      <!-- <app-users></app-users> -->
+      <div class="content-body">
+      <router-outlet></router-outlet>
+    </div>
+    </div>
+  
+  </mat-drawer-container>
