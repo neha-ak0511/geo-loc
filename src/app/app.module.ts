@@ -8,12 +8,16 @@ import { ContactUsModule } from './contact-us/contact-us.module';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreComponent } from './store/store.component';
+import { FooterComponent } from './footer/footer.component';
+import { MapRenderComponent } from './map-render/map-render.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     StoreComponent,
+    FooterComponent,
+    MapRenderComponent,
   ],
   imports: [
     BrowserModule,

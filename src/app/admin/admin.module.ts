@@ -12,6 +12,8 @@ import { ReportsComponent } from './reports/reports.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { AdminComponent } from './admin/admin.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 @NgModule({
   declarations: [
     UsersComponent,
@@ -28,7 +30,8 @@ import { MatCardModule } from '@angular/material/card';
     AdminRoutingModule,
     MatTableModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressSpinnerModule
   ]
 })
 export class AdminModule { }
