@@ -1,13 +1,13 @@
 <mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
       <ul class="side-nav-options-list">
         
-        <li [routerLink]="['overview']">Overview</li>
-        <li [routerLink]="['suppliers']">Manage suppliers</li>
-        <li [routerLink]="['users']">Manage customers</li>
-        <li [routerLink]="['personalsettings']">Personal settings</li>
-        <li [routerLink]="['analytics']">Analytics</li>
-        <li [routerLink]="['reports']">Reports</li>
+        <li routerLinkActive="active" [routerLink]="['overview']">Overview</li>
+        <li  routerLinkActive="active" [routerLink]="['suppliers']">Manage suppliers</li>
+        <li  routerLinkActive="active" [routerLink]="['users']">Manage customers</li>
+        <li  routerLinkActive="active" [routerLink]="['personalsettings']">Personal settings</li>
+        <li  routerLinkActive="active" [routerLink]="['analytics']">Analytics</li>
+        <li  routerLinkActive="active" [routerLink]="['reports']">Reports</li>
   
       </ul>
     </mat-drawer>

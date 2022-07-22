@@ -9,7 +9,6 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreComponent } from './store/store.component';
 import { FooterComponent } from './footer/footer.component';
-import { MapRenderComponent } from './map-render/map-render.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { MapRenderComponent } from './map-render/map-render.component';
     NavBarComponent,
     StoreComponent,
     FooterComponent,
-    MapRenderComponent,
   ],
   imports: [
     BrowserModule,

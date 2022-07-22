@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { HomeRoutingModule } from './home/home-routing-module';
 import { MatTableModule } from '@angular/material/table';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { MatTableModule } from '@angular/material/table';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    MatTableModule
+    MatTableModule,
+    SharedModule
   ]
 })
 export class HomeModule { }

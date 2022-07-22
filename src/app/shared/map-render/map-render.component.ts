@@ -11,5 +11,6 @@ export class MapRenderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }
