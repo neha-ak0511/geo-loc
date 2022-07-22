@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ContactUsRoutingModule } from './contact-us.routing.module';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -11,7 +12,8 @@ import { ContactUsRoutingModule } from './contact-us.routing.module';
   ],
   imports: [
     CommonModule,
-    ContactUsRoutingModule
+    ContactUsRoutingModule,
+    MatCardModule
   ]
 })
 export class ContactUsModule { }
