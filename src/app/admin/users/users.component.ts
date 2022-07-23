@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { data } from 'src/data/MOCK_DATA';
+import { data } from 'src/data/users';
 
 @Component({
   selector: 'app-users',

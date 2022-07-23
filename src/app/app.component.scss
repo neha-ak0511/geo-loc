@@ -6,4 +6,13 @@
     background-color: red;
     color: white;
     text-align: center;
- }
+}
+
+.page-body {
+    z-index: -1;
+}
+
+.nav-body {
+    position: relative;
+    z-index: 2;
+}

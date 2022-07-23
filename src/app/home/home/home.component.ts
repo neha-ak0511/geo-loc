@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { data } from '../../../data/MOCK_DATA'
-import { User } from '../../model/user.model';
+import { items } from '../../../data/items';
+
 
 @Component({
   selector: 'app-home',
@@ -8,9 +8,8 @@ import { User } from '../../model/user.model';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  data = items.splice(0, 10);
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = data;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,35 @@
+<mat-card>
+    <div class="row">
+        <div class="col-md-3">
+            <img class="item-image" 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ41HEtqinJNTl2An3xqMHKMkkM63uVKF3OTh51O_IwyWht5hpOQHLkKEgN5AW1yGQ7km8&usqp=CAU" alt="">
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-7">
+                    <mat-card-title> {{getName(data.name)}}</mat-card-title>
+                    <mat-card-subtitle>{{data.category}}</mat-card-subtitle>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="price">&#8377; {{data?.price}}.00</h2>
+                </div>
+            </div>
+
+            <mat-card-content>
+                <div class="row">
+                    <div class="col-md-12 descr">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum iusto cupiditate numquam...
+                    </div>
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <!-- <button mat-button>Buy now</button>
+                <button mat-button>Add to cart</button> -->
+                <button mat-flat-button color="primary">Buy now</button>
+                <button mat-stroked-button color="accent">Add to cart</button>
+            </mat-card-actions>
+        </div>
+    </div>
+
+
+</mat-card>

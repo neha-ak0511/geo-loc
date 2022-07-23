@@ -1,0 +1,23 @@
+mat-card {
+    color: grey;
+}
+mat-card-title {
+    color: rgb(220, 52, 52);
+}
+mat-card-subtitle {
+    color: #4267B2;
+}
+.price {
+    float: right;
+    color: green;
+}
+.item-image {
+    height: 80%;
+    width: 100%;
+}
+mat-card-actions {
+    float: right;
+}
+.descr {
+    height:20px;
+}
