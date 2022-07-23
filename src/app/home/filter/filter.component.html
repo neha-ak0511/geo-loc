@@ -1,23 +1,62 @@
-<mat-accordion *ngFor="let f of filterGroups">
-    <mat-expansion-panel  [expanded]="true">
-        <mat-expansion-panel-header style="background-color: rgba(89, 89, 133, 0.46); color: white; margin-bottom: 5px; height: 50px;">
+<mat-accordion>
+    <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header
+            style="background-color: rgba(89, 89, 133, 0.46); color: white; margin-bottom: 5px; height: 50px;">
             <mat-panel-title>
-               {{f}}
+                Categories
+            </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <div>
+            <section class="example-section" [formGroup]="toppings">
+                <p *ngFor="let b of categories">
+                    <mat-checkbox formControlName="pepperoni">{{b}}</mat-checkbox>
+                </p>
+            </section>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion>
+    <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header
+            style="background-color: rgba(89, 89, 133, 0.46); color: white; margin-bottom: 5px; height: 50px;">
+            <mat-panel-title>
+                Brand
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div>
+            <section class="example-section" [formGroup]="toppings">
+                <p *ngFor="let b of brands">
+                    <mat-checkbox formControlName="pepperoni">{{b}}</mat-checkbox>
+                </p>
+            </section>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+
+<mat-accordion>
+    <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header
+            style="background-color: rgba(89, 89, 133, 0.46); color: white; margin-bottom: 5px; height: 50px;">
+            <mat-panel-title>
+                Price
             </mat-panel-title>
 
         </mat-expansion-panel-header>
         <p>This is the primary content of the panel.</p>
     </mat-expansion-panel>
+</mat-accordion>
 
-
-
-    <!-- <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-        <mat-expansion-panel-header>
+<mat-accordion>
+    <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header
+            style="background-color: rgba(89, 89, 133, 0.46); color: white; margin-bottom: 5px; height: 50px;">
             <mat-panel-title>
-                Self aware panel
+                Customer ratings
             </mat-panel-title>
 
         </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
-    </mat-expansion-panel> -->
+        <p>This is the primary content of the panel.</p>
+    </mat-expansion-panel>
 </mat-accordion>

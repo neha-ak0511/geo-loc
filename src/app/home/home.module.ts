@@ -8,6 +8,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { FilterComponent } from './filter/filter.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,10 @@ import { FilterComponent } from './filter/filter.component';
     SharedModule,
     MatCardModule,
     MatSidenavModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCheckboxModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class HomeModule { }
