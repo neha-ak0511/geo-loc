@@ -16,6 +16,20 @@ export class FilterComponent implements OnInit {
   });
   @Input() brands: any;
   @Input() categories: any;
+  ratings = [
+    "4★ & above",
+    "3★ & above",
+    "2★ & above",
+    "1★ & above",
+  ]
+  priceRanges = [
+    "Under ₹500",
+    "₹500 - ₹1,000",
+    "₹1,000 - ₹2,000",
+    "₹2,000 - ₹3,000",
+    "Over ₹3,000"
+  ]
+
 
   constructor(private _formBuilder: FormBuilder) { }
 

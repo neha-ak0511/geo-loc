@@ -10,7 +10,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { FilterComponent } from './filter/filter.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { MatSliderModule } from '@angular/material/slider';
+import { MatRadioModule } from '@angular/material/radio';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -26,7 +27,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatExpansionModule,
     MatCheckboxModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSliderModule,
+    MatRadioModule
   ]
 })
 export class HomeModule { }

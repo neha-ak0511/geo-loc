@@ -44,7 +44,13 @@
             </mat-panel-title>
 
         </mat-expansion-panel-header>
-        <p>This is the primary content of the panel.</p>
+        <div>
+            <section class="example-section" [formGroup]="toppings">
+                <p *ngFor="let pr of priceRanges">
+                    <mat-checkbox formControlName="pepperoni">{{pr}}</mat-checkbox>
+                </p>
+            </section>
+        </div>
     </mat-expansion-panel>
 </mat-accordion>
 
@@ -57,6 +63,14 @@
             </mat-panel-title>
 
         </mat-expansion-panel-header>
-        <p>This is the primary content of the panel.</p>
+        <div>
+            <section class="example-section" [formGroup]="toppings">
+                <mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group">
+                    <mat-radio-button class="example-radio-button" *ngFor="let rt of ratings" [value]="rt">
+                        {{rt}}
+                    </mat-radio-button>
+                </mat-radio-group>
+            </section>
+        </div>
     </mat-expansion-panel>
 </mat-accordion>
